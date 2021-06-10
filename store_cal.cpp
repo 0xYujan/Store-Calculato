@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    string item;
+    string item1;
     string item2;
     double price1; //first item price
     double price2; // second item price
@@ -17,7 +17,7 @@ int main(){
     bool zero = false;
 
     cout << "what item do you want you buy? ";
-    getline (cin, item);
+    getline (cin, item1);
 
     cout << "You have another item or not? ";
     cin >> one , zero;
@@ -38,10 +38,10 @@ int main(){
         cout << "ok";
     }
 
-    cout << item << " price? $";
+    cout << item1 << " price? $";
     cin >> price1;
 
-    cout << "how many do you want to buy " << item +" "+ "?: ";
+    cout << "how many do you want to buy " << item1 +" "+ "?: ";
     cin >> quantity1;
 
     total1= price1 * quantity1 ;
@@ -51,8 +51,8 @@ int main(){
     
     
 
-    cout << "item : " << item +" & "+  item2<<endl;
-    cout << "price of " << item << " : $" << price1 << endl;
+    cout << "item : " << item1 +" & "+  item2<<endl;
+    cout << "price of " << item1 << " : $" << price1 << endl;
     cout << "price of " << item2 << " : $ " << price2 <<endl;
     cout << "x " << quantity3<< endl;
     cout << "your total is: $" << total3 << endl;
